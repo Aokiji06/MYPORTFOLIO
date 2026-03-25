@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jonel T. Balberan | Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="hero-label">Student Portfolio</p>
+          <h1>Jonel T. Balberan</h1>
+          <p class="subtitle">BSCS Student | Aspiring IT Professional</p>
+          <p class="welcome-message">
+            Welcome to my personal portfolio showcasing my academic projects.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-photo-card">
+          <img
+            src="jphoto.jpg.jpg"
+            alt="Portrait of Jonel T. Balberan"
+            class="hero-photo"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">About Me</p>
+          <h2>Who I Am</h2>
+        </div>
+        <div class="content-panel">
+          <p>
+            Hi, I am Jonel T Balberan, a student from CCA BSCS-C302 with a passion for exploring ideas and meeting new people. As an ENTJ, I enjoy logical thinking, planning ahead, and focusing on possibilities. I aspire to thrive in the IT industry and make a meaningful impact in the field.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Education</p>
+          <h2>Educational Background</h2>
+        </div>
+        <div class="education-grid">
+          <article class="info-card">
+            <h3>College</h3>
+            <p>Currently studying at City College of Angeles</p>
+          </article>
+
+          <article class="info-card">
+            <h3>High School</h3>
+            <p>Graduated from Angeles City National Trade School</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Projects</p>
+          <h2>Midterm Tasks</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-image">Screenshot Placeholder</div>
+            <div class="project-content">
+              <h4>Midterm Task 1: Data Cleaning and Preparation using Excel</h4>
+              <p>This task focuses on organizing raw data, fixing errors, and preparing information for accurate analysis in Excel.</p>
+              <button class="btn btn-card view-image-btn" type="button" data-title="Midterm Task 1" data-image-label="Data Cleaning and Preparation using Excel">View Image</button>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">Screenshot Placeholder</div>
+            <div class="project-content">
+              <h4>Midterm Task 2: Data Analysis using Pivot Table</h4>
+              <p>This project summarizes data through pivot tables to make trends, totals, and comparisons easier to understand.</p>
+              <button class="btn btn-card view-image-btn" type="button" data-title="Midterm Task 2" data-image-label="Data Analysis using Pivot Table">View Image</button>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">Screenshot Placeholder</div>
+            <div class="project-content">
+              <h4>Midterm Task 3: Data Preparation, Cleaning, and Modeling with Power Query</h4>
+              <p>This task uses Power Query to clean, transform, and model data into a more organized and usable format.</p>
+              <button class="btn btn-card view-image-btn" type="button" data-title="Midterm Task 3" data-image-label="Data Preparation, Cleaning, and Modeling with Power Query">View Image</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container contact-layout">
+        <div class="content-panel contact-copy">
+          <div class="section-heading">
+            <p class="section-tag">Contact</p>
+            <h2>Get In Touch</h2>
+          </div>
+          <p>You can reach me directly through my email address below.</p>
+          <p><strong>Email:</strong> jonelbalberan6@gmail.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="imageModal" aria-hidden="true">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close image modal">&times;</button>
+      <h3 id="modalTitle">Project Preview</h3>
+      <div class="modal-image" id="modalImage">Screenshot Placeholder</div>
+      <p id="modalCaption">Project screenshot preview.</p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Jonel T. Balberan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
